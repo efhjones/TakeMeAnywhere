@@ -31009,155 +31009,193 @@
 	      };
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'blueBackground' },
+	        { className: 'blueBackground container-fluid' },
 	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Airport'
-	        ),
-	        _react2.default.createElement(_reactAutosuggest2.default, { suggestions: suggestions,
-	          onSuggestionsUpdateRequested: this.onSuggestionsUpdateRequested,
-	          getSuggestionValue: getSuggestionValue,
-	          renderSuggestion: renderSuggestion,
-	          inputProps: inputProps,
-	          ref: this.saveInput }),
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Price: $',
-	          this.state.price
-	        ),
-	        _react2.default.createElement('input', { type: 'range',
-	          id: 'price',
-	          style: formStyle,
-	          min: '100',
-	          max: '3000',
-	          value: this.state.price,
-	          onChange: this.changePrice,
-	          step: '50' }),
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Departure Date'
-	        ),
-	        _react2.default.createElement('input', { type: 'date',
-	          className: 'form-control',
-	          style: formStyle,
-	          id: 'depDate',
-	          value: this.state.depDate,
-	          onChange: this.changeDepDate }),
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Return Date'
-	        ),
-	        _react2.default.createElement('input', { type: 'date',
-	          className: 'form-control',
-	          style: formStyle,
-	          id: 'returnDate',
-	          value: this.state.returnDate,
-	          onChange: this.changeReturnDate }),
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Adults'
+	          'div',
+	          { className: 'row constraint' },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Airport'
+	          ),
+	          _react2.default.createElement(_reactAutosuggest2.default, { suggestions: suggestions,
+	            onSuggestionsUpdateRequested: this.onSuggestionsUpdateRequested,
+	            getSuggestionValue: getSuggestionValue,
+	            renderSuggestion: renderSuggestion,
+	            inputProps: inputProps,
+	            ref: this.saveInput })
 	        ),
 	        _react2.default.createElement(
-	          'select',
-	          { className: 'form-control',
-	            id: 'adults',
-	            style: formStyle,
-	            value: this.state.adults,
-	            onChange: this.changeAdults },
+	          'div',
+	          { className: 'row' },
 	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '1'
+	            'div',
+	            { className: 'col-xs-3 constraint' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Price: $',
+	              this.state.price
+	            ),
+	            _react2.default.createElement('input', { type: 'range',
+	              id: 'price',
+	              style: formStyle,
+	              min: '100',
+	              max: '3000',
+	              value: this.state.price,
+	              onChange: this.changePrice,
+	              step: '50' })
 	          ),
 	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '2'
+	            'div',
+	            { className: 'col-xs-3 constraint' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Departure Date'
+	            ),
+	            _react2.default.createElement('input', { type: 'date',
+	              className: 'form-control',
+	              style: formStyle,
+	              id: 'depDate',
+	              value: this.state.depDate,
+	              onChange: this.changeDepDate })
 	          ),
 	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '3'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '4'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '5'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '6'
+	            'div',
+	            { className: 'col-xs-3 constraint' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Return Date'
+	            ),
+	            _react2.default.createElement('input', { type: 'date',
+	              className: 'form-control',
+	              style: formStyle,
+	              id: 'returnDate',
+	              value: this.state.returnDate,
+	              onChange: this.changeReturnDate })
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Children'
-	        ),
-	        _react2.default.createElement(
-	          'select',
-	          { className: 'form-control',
-	            id: 'children',
-	            style: formStyle,
-	            value: this.state.children,
-	            onChange: this.changeChildren },
+	          'div',
+	          { className: 'row' },
 	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '0'
+	            'div',
+	            { className: 'col-xs-3 constraint' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Adults'
+	            ),
+	            _react2.default.createElement(
+	              'select',
+	              { className: 'form-control',
+	                id: 'adults',
+	                style: formStyle,
+	                value: this.state.adults,
+	                onChange: this.changeAdults },
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '1'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '2'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '3'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '4'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '5'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '6'
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '1'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '2'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '3'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '4'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '5'
-	          ),
-	          _react2.default.createElement(
-	            'option',
-	            null,
-	            '6'
+	            'div',
+	            { className: 'col-xs-3 constraint' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Children'
+	            ),
+	            _react2.default.createElement(
+	              'select',
+	              { className: 'form-control',
+	                id: 'children',
+	                style: formStyle,
+	                value: this.state.children,
+	                onChange: this.changeChildren },
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '0'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '1'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '2'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '3'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '4'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '5'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                null,
+	                '6'
+	              )
+	            )
 	          )
 	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          'button',
-	          { className: 'btn btn-primary',
-	            onClick: function onClick() {
-	              return _this2.onSubmitClick(_this2.state);
-	            }
-	          },
-	          'Submit'
+	          'div',
+	          { className: 'row constraints' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-xs-12 constraints' },
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'button',
+	                onClick: function onClick() {
+	                  return _this2.onSubmitClick(_this2.state);
+	                }
+	              },
+	              'Submit'
+	            )
+	          )
 	        )
 	      );
 	    }

@@ -31,6 +31,21 @@
   > Life's short. Get away when you can.
 
 
+# Local Setup
+* Run ```npm install```
+* Create an API key [here](http://en.business.skyscanner.net/en-gb/products/travel-apis/)
+* Create key.js file in the server folder
+* In key.js, paste and replace with your own API key
+```sh
+module.exports = {
+ api_key: “YOUR API KEY HERE"
+}
+```
+* Run ```npm run build``` Creates and concats ```index.js```
+* For local development/front-end work, run
+```npm run dev```
+* To API calls will not work unless you are running ```npm start```
+
 
 
 
